@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { selectOptions } from "../../data/mock";
 import { emptyFormFields, FormFieldsTypes } from "../../types/types";
+import { calculateProgressBar } from "../../utils/utils";
 import { FormField } from "./FormField/FormField";
+import { FormProgressBar } from "./FormProgressBar/FormProgressBar";
 import { FormContainer } from "./styles";
 
 export const Form = () => {
@@ -18,7 +20,7 @@ export const Form = () => {
 
   return (
     <FormContainer>
-      {/* crie a barra de progresso aqui */}
+      <FormProgressBar progressBar={calculateProgressBar(values)} />
       <FormField
         label="Full Name"
         field={

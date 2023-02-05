@@ -5,6 +5,10 @@ export interface FormGroupProps {
   field: ReactElement;
 }
 
+export interface FormProgressBarProps {
+  progressBar: number;
+}
+
 export type FormFieldsTypes = {
   fullName: string;
   email: string;
