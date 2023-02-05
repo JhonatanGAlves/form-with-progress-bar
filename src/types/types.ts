@@ -9,6 +9,11 @@ export interface FormProgressBarProps {
   progressBar: number;
 }
 
+export interface GlobalNotificationProps {
+  message: string;
+  onClick: () => void;
+}
+
 export type FormFieldsTypes = {
   fullName: string;
   email: string;
