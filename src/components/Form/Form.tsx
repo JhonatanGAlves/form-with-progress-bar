@@ -80,14 +80,11 @@ export const Form = () => {
           field={
             <select
               name="maritalStatus"
-              value={values.maritalStatus}
               onChange={handleOnChange}
               placeholder={"Select..."}
             >
               {selectOptions.map((option) => (
-                <option key={option.value} value={option.value}>
-                  {option.label}
-                </option>
+                <option key={option.value}>{option.label}</option>
               ))}
             </select>
           }

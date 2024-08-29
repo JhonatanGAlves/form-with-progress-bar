@@ -1,5 +1,9 @@
 export const selectOptions = [
   {
+    value: "",
+    label: "",
+  },
+  {
     value: "single",
     label: "Single",
   },
